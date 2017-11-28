@@ -1,0 +1,20 @@
+ footer {
+      background-color: #abd373;
+      color:white;
+      padding: 0px;
+     margin:0;
+	 width: 100%;
+	 left: 0;
+	 bottom: 0;
+}
+
+h2{font-size: 150%;
+ }
+
+h1{
+	font-size: 150%;
+	}
+
+.container{
+	background-color: whitesmoke;
+}
