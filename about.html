@@ -9,27 +9,55 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!--Custom styles here-->
 	<link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script|Roboto" rel="stylesheet">
+    
 	<style>
 	body {
 			background-color: #ffffff;
 		}
 
+        .navbar{
+            background: transparent;
+            background-color: transparent;
+            border-color: transparent;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .navbar.ko{
+           background: #000; 
+            color: #fff;
+        }
+        .navbar-brand, .navbar-nav li a{
+            line-height: 60px;
+            height: 60px;
+            padding-top: 1px;
+        }
+        
+        .position{
+            position:relative;
+            top:5px;
+    
+        }
 		.ecofriendly {
 			margin: auto;
 			margin-bottom: 25px;
-			background-image: url(img/about%20image%20hero.jpg);
-			background-repeat: no-repeat;
-			height: 400px;
-			width: 700px;
 			align-content: center;
-			text
 		}
-	}
+        
+        .ecofriendly p{
+            margin-top: 20px;
+            font-family: 'Marck Script', cursive;
+            font-size: 160%;
+        }
+        
+        .container{
+             margin-bottom: 1.5rem;
+        }
 
 	.history {
-
 		text-align: left;
-		font-family:
+		 margin-top: 5rem;
+         margin-bottom: 4rem;
 	}
 
 	.mission {
@@ -44,6 +72,7 @@
 
 	.faqs {
 		text-align: left;
+         margin-bottom: 17rem;
 	}
 
 	h1,
@@ -53,26 +82,63 @@
 		font-family:
 	}
 
-	.footer {
-		background-color: chartreuse;
-		background size: 300px 100px
-	}
 
 	.more {
 		display: none;
 	}
-
+        .footer{
+            width: 100%;
+            
+        }
 	</style>
 
 </head>
 
 <body>
 	<!--Your HTML here-->
+    
 	<header>
-		<img id="logo" src="img/ciao-bow-wow-logo-064.gif"> </header>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+    	<div class="container-fluid">
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+				<span class="glyphicon glyphicon-menu-hamburger"></span>
+			</button>
+			<a class="navbar-brand" href="index.html">
+                <img src="img/ciao-bow-wow-logo-064.gif" style="width:120px;" "height:50px" alt="logo">
+            </a>
+    </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav navbar-center" >
+                <li><a href="index.html"><b>Home</b></a></li>
+						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="about.html" role="button" aria-haspopup="true" aria-expanded="false">About Us<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="about.html">History</a></li>
+                                <li><a href="about.html">Standards</a></li>
+                                <li><a href="about.html">FAQS</a></li>
+                            </ul>
+                </li>
+				<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="about.html" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="http://ciaobowwowny.com/grooming/">Grooming</a></li>
+                                <li><a href="http://ciaobowwowny.com/dog-daycare/">Day-Care</a></li>
+                            </ul>
+                </li>
+						<li><a href="http://ciaobowwowny.com/pet-boutique/">Boutique</a> </li>
+						<li><a href="register.html">Register</a> </li>
+						<li><a href="http://ciaobowwowny.com/contact/">Contact</a> </li>
+           </ul>
+		</div>
+            </div>
+	</nav>  
+    </header>
+    
 	<div class="ecofriendly">
-		<p>"Ciao Bow Wow is an eco-friendly, state of the art Dog Daycare Grooming Spa and Pet Boutique"</p>
-	</div>
+        <img src="img/about%20image%20hero.jpg" alt="about" style="width:100%; height:500px">
+        <p style="text-align: center;">
+            "Ciao Bow Wow is an eco-friendly, state of the art Dog Daycare Grooming Spa and Pet Boutique"</p>
+        </div>
+    
 	<div class="container">
 		<div class="history">
 			<h1 style="text-align: center"><strong>HISTORY</strong></h1>
@@ -108,8 +174,10 @@
 				<li>
 					<p>Provide Immaculate, Healthy Surroundings: WE DO keep our entire facility impeccably clean, using all-natural, earth-friendly cleaners and disinfectants. We also diffuse essential oils from Young Living in our daycare and grooming rooms, to promote a balanced and soothing environment for your dog.</p>
 				</li>
+            </ul>
 				<a href="#" class="btn btn-primary btnmore">Read More</a>
 				<div class="more">
+                
 				<ul>
 					<li>
 					<p>Provide Immaculate, Healthy Surroundings: WE DO keep our entire facility impeccably clean, using all-natural, earth-friendly cleaners and disinfectants. We also diffuse essential oils from Young Living in our daycare and grooming rooms, to promote a balanced and soothing environment for your dog.</p>
@@ -145,26 +213,27 @@
 				<br> If you have questions about our methods, philosophy, or anything else, please contact us.
 			</ul>
 		</div>
+        </div>
 
 		<br>
+    </div>
 		<footer class="container-fluid text-center">
-			<h1 style="text-align: right">
-				<p>11 Maiden Lane, 2nd Floor ~ New York, New York 10038</p>
+			<h1 style="text-align: right">11 Maiden Lane, 2nd Floor ~ New York, New York 10038<br>
+				398 Atlantic Avenue ~ Brooklyn, New York 11217
 			</h1>
-			<h2 style="text-align: right">
-				<p>398 Atlantic Avenue ~ Brooklyn, New York 11217</p>
-			</h2>
 
 			<div class=" fb">
 				<a href="https://www.facebook.com/ciaobowwowny/?ref=ts" target="_blank" class="btn btn-link">
 		<img src="img/fb.png" style="width: 194.5px; height: 50px; border: 0;"></a>
 			</div>
-			<h4>Copyright © All Rights Reserved</h4>
+			<h2>Copyright © All Rights Reserved</h2>
 		</footer>
-		<!--Required scripts-->
+		
+    <!--Required scripts-->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<!--Custom script here-->
+		
+    <!--Custom script here-->
 		<script>
 			$(".btnmore").click(function() {
 							$(this).next(".more").toggle();
@@ -172,7 +241,23 @@
 						});
 
 		</script>
-			
+                
+        <script>
+     
+     window.onscroll = function() {myFunction()};
+
+function myFunction() {
+    console.log(document.documentElement.scrollTop);
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        $('nav').addClass("ko");
+    } else {
+        $('nav').removeClass("ko");
+    }
+}
+     
+     </script>
+               
+      			
 </body>
 
 </html>
