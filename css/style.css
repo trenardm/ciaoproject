@@ -2,6 +2,10 @@
     font-family: 'Roboto', sans-serif !important;
 }
 
+       .navbar.ko{
+           background: #000; 
+            color: #fff;
+}
 .navbar.ko a {
             color: #fff!important;
     font-size: 18px;
