@@ -1,5 +1,5 @@
 .container{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif !important;
 }
 
 .navbar.ko a {
@@ -11,10 +11,26 @@
             color: #000!important;
     font-size: 18px;
         }
+.navbar-nav>li>a:hover{
+    background-color: #555!important; 
+    color: #fff !important;
+}
+
+.navbar.ko li ul a {
+    color: #555 !important;    
+}
+
+.navbar.ko li ul a:hover {
+    background-color: #555 !important;
+    color:white !important;
+    
+}
+
 .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
     color: #fff!important;
     background-color: #080808;
 }
+
 
 footer {
       background-color: #abd373;
@@ -31,6 +47,10 @@ footer {
     font-size: 20%;    
 }
 
+p{
+    font-style:1.4em;
+    line-height: 1.5;
+}
 
 h1, h2 {
 	font-size: 150%;   
